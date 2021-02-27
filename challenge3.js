@@ -3,7 +3,7 @@ let solution = (N, A) => {
     let counters = Array(N).fill(0); 
 
     // Checks the array and assigns it's maximum number to "maxNumber"
-    var maxNumber = counters.reduce((a, b) => Math.max(a, b));
+    var maxNumber = Math.max(...counters);
     
     for (i = 0; i < A.length; i++) {
         // Initializing index i for array A.
